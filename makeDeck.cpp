@@ -1,7 +1,7 @@
-#include "hw09"
+#include "hw09.h"
 
 
-vector<card> makeDeck(){
+std::vector<card> makeDeck(){
 	std::vector<card> deck;
 	card card;
 	std::vector<std::string> face = {"ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king"};

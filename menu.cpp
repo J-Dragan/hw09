@@ -1,10 +1,12 @@
+#include "hw09.h"
+
 int menu(){
     while(true){
 	try{
 		int num;
-		std::cout << "Want to play? \n 1. Guess the face of the card \n 2. Guess the suit of the card \n 3. Guess both the face and suit \n 4. Played enough \n Enter your choice:"
+		std::cout << "Want to play? \n 1. Guess the face of the card \n 2. Guess the suit of the card \n 3. Guess both the face and suit \n 4. Played enough \n Enter your choice:\n";
 		std::cin >> num;
-		if(cin.fail()){
+		if(std::cin.fail()){
 			throw std::runtime_error("must be number");
 		}
 		if(num < 1 || num > 4){
@@ -24,4 +26,5 @@ int menu(){
     
     
 	}    
+    }
 }

@@ -7,7 +7,8 @@ void guessFace(std::vector<card> &deck){
 	std::cin >> face;
 	if(face == deck[0].face){
 		std::cout << "good job" << std::endl;
-	else
-		std::cout << "you lose the face was " deck[0].face << std::endl;
-
-
+	}
+	else{ 
+		std::cout << "you lose the face was " << deck[0].face << std::endl << std::endl;
+	}
+}

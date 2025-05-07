@@ -1,6 +1,8 @@
+#include "hw09.h"
+
 int main(){
-	std::vecto<card> deck = makeDeck();
-	choice = 1
+	std::vector<card> deck = makeDeck();
+	int choice = 1;
 	while(choice !=4){
 		choice = menu();
 		if(choice == 1){
